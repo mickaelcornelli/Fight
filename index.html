@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fight</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+	
+	<div class="title">
+	 <h1>Préparez vous au combat !</h1>
+	 <a href="#combat" class="glow-on-hover button transition">Jouer</a>
+	</div>
+	
+	<div id="affichage">
+		<img src="img/win.jpg" id="perso1" class="hide"/>
+		<img src="img/lose.jpg" id="perso2" class="hide"/>
+	</div>
+	
+	<div id="combat" class="hide">
+		<div id="perso"></div>
+		<div id="dragon"></div>
+	</div>
+	<div id="info">
+		<p>Info</p>
+	</div>
+	<div id="playAgain" class="hide">
+		<a href="#" class="glow-on-hover button transition" value="Reload Page" onClick="document.location.reload(true)">Re-jouer</a>
+	</div>
+	<div id="commande">
+		<audio id="playAttaquer" src="https://www.soundjay.com/misc/slide-1.wav"></audio>
+		<button id="attaquer" class="glow-on-hover" onclick="playSoundAttack()">Attaquer</button>
+		<audio id="playDefendre" src="music/defendre.wav"></audio>
+		<button id="defendre" class="glow-on-hover" onclick="playSoundDefendre()">Défendre</button>
+		<audio id="playSort" src="music/sort.wav"></audio>
+		<button id="sort" class="glow-on-hover" onclick="playSoundSort()">Sort</button>
+	</div>
+	
+<script type="text/javascript" src="js/lib.js"></script>
+<script type="text/javascript" src="js/classes/Perso.class.js"></script>
+<script type="text/javascript" src="js/classes/Program.class.js"></script>
+<script type="text/javascript" src="js/main.js"></script>	
+</body>
+</html>
